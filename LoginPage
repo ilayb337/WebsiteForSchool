@@ -3,7 +3,7 @@ from nicegui import ui
 ui.add_head_html("<div dir=ltr>")
 
 with ui.row().classes("w-full justify-center gap-20"):
-    ui.label('welcome to UNDECIDED WEBSITE NAME!').style('color: #6E93D6; font-size: 200%')
+    ui.label('welcome to Login page').style('color: #6E93D6; font-size: 200%')
 with ui.row().classes("w-full justify-center"):
     with ui.column():
         ui.input('full name')
@@ -13,6 +13,5 @@ with ui.row().classes("w-full justify-center"):
         ui.label('Gender')
         ui.radio(['Male', 'Female', 'Other'], value='Male')
         with ui.row().classes("gap-700"):
-            ui.button('Sign up', on_click=lambda: ui.notify('Click')).classes('square w-600 h-600')
-            ui.link('to Login page', 'http://10.0.0.12:8080')
+            ui.button('Sign in', on_click=lambda: ui.notify('Click')).classes('square w-600 h-600')
 ui.run()
