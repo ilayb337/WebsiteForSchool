@@ -3,7 +3,7 @@ from nicegui import ui
 ui.add_head_html("<div dir=ltr>")
 
 with ui.row().classes("w-full justify-center gap-20"):
-    ui.label('welcome to Login page').style('color: #6E93D6; font-size: 200%')
+    ui.label('welcome to Login page').style('color: #6E93D6; font-size: 200%; font-family :  Open Sans')
 with ui.row().classes("w-full justify-center"):
     with ui.column():
         ui.input('full name')

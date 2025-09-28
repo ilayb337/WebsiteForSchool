@@ -3,4 +3,17 @@ from nicegui import ui
 ui.add_head_html("<div dir=ltr>")
 #Grid of reported comments here
 
+ui.label('Admin page ').style('color: #6E93D6; font-size: 200%; font-family :  Open Sans')
+
+grid = ui.aggrid({
+    'columnDefs': [
+        {'headerName': 'Report_date', 'field': 'Report_date'},
+        {'headerName': 'Review_ID', 'field': 'Review_ID'},
+        {'headerName': 'Report_content', 'field': 'Report_content'},
+        {'headerName': 'Report_ID', 'field': 'Report_ID'}],
+
+
+    'rowData': [],
+}).classes('max-h-40')
+
 ui.run()
