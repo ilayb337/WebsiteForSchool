@@ -1,0 +1,6 @@
+from nicegui import ui 
+
+ui.add_head_html("<div dir=ltr>")
+ui.button('Admin access', on_click=lambda: ui.notify('Click')).classes('rounded-lg')
+
+ui.run()
